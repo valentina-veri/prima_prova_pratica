@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.larghezza {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*HEADER INIZIO*/
+nav,
+#section1 {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    align-items: center;
+}
+
+/* inizio sezione 1 con i loghi air Jordan-converse e il mini menù */
+#section1 {
+    height: 35px;
+    background-color: #F5F5F5;
+}
+
+#loghi2 {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+#minimenu {
+    width: 30%;
+    padding-right: 3%;
+}
+
+#section1 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#section1 ul li {
+    float: left;
+    width: 15%;
+    border-right: black solid 2px;
+}
+
+#section1 ul li:first-child {
+    width: 35%;
+}
+
+#section1 ul li:nth-child(3) {
+    width: 27%;
+}
+
+#section1 ul li:last-child {
+    border-right: transparent;
+}
+
+#section1 ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+#section1 ul li a:hover {
+    color: rgb(129, 129, 129);
+}
+
+.loghi {
+    width: 50px;
+    padding-right: 20px;
+}
+
+.loghi img {
+    width: 90%;
+}
+
+/*sezione nav con il logo della nike, il menù principale, la barra di ricerca e le icone dei preferiti e del carrello*/
+#logo {
+    width: 32%;
+}
+
+#logo img {
+    width: 20%;
+}
+
+#menu {
+    width: 45%;
+}
+
+#search {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#button {
+    width: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    width: 13%;
+}
+
+nav ul li:first-child {
+    float: left;
+    width: 30%;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.2 rem;
+}
+
+nav ul li a:hover {
+    border-bottom: black 2px solid;
+    padding-bottom: 3px;
+}
+
+#cerca,
+#preferiti,
+#carrello {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: white;
+}
+
+#preferiti:hover,
+#carrello:hover,
+#ricerca:hover {
+    background-color: #E5E5E5;
+}
+
+#ricerca {
+    border-radius: 20px;
+    border: #F5F5F5;
+    background-color: #E5E5E5;
+    width: 80%;
+    height: 42px;
+    padding-left: 30%;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#cerca {
+    position: absolute;
+    background-color: #E5E5E5;
+}
+
+main {
+    padding-top: 5%;
+}
+
+#style {
+    color: rgb(236, 63, 0);
+}
+
+#prodottiAggiunti {
+    float: left;
+    margin-left: 7%;
+    width: 51%;
+}
+
+.divarticolo img {
+    width: 180px;
+    height: 180px;
+    float: left;
+    margin-top: 16px;
+}
+
+#prodottiAggiunti a {
+    color: black;
+}
+
+.articolo {
+    float: left;
+    margin-left: 3%;
+    margin-right: 28%;
+}
+
+.articolo img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.articolo img:hover {
+    transform: scale(1.3)
+}
+
+.costo {
+    float: left;
+    padding-top: 2%;
+}
+
+#titolo {
+    border: 1px solid #E5E5E5;
+    padding: 15px;
+}
+
+#titolo h2 {
+    margin-top: 0;
+}
+
+#titolo p {
+    margin-bottom: 0;
+}
+
+.ritiro {
+    border-bottom: #E5E5E5 1px solid;
+    padding-bottom: 4%;
+}
+
+#riepilogo {
+    float: left;
+    margin-left: 5%;
+    width: 30%;
+}
+
+#riepilogo h2 {
+    margin-top: 0;
+}
+
+.divriepilogo {
+    float: left;
+    width: 84%;
+}
+
+.costototale {
+    float: left;
+    margin-bottom: 1%;
+}
+
+.bordo {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+#riepilogo a {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 5% 0;
+    text-align: center;
+    margin-top: 7%;
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+
+#paypal {
+    width: 100%;
+    background-color: #F5F5F5;
+    color: #14A4E3;
+    border-radius: 50px;
+    padding: 5% 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 4%;
+    border: #d6d5d5 solid 1px;
+    font-style: oblique;
+}
+
+#paypal span {
+    color: #113984;
+    font-style: oblique;
+}

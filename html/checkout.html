@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <script src="../js/checkout.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="larghezza">
+            <div id="logo">
+                <a href="homepage.html"><img src="../immagini/logo.png" alt="logo"></a>
+            </div>
+
+            <div id="button">
+                <button id="carrello">
+                    <img src="../immagini/icone/icons8-borsa-50.png" alt="carrello" title="carrello">
+                </button>
+            </div>
+        </section>
+    </header>
+
+    <main class="larghezza">
+        <h1>Pagamento</h1>
+        <div class="clearfix">
+
+            <section id="box-1">
+
+                <h2>Opzioni di consegna</h2>
+
+                <div id="consegna">
+
+                    <div id="TipoDiConsegna">
+
+                        <button>Spedizione</button>
+                        <button>Ritiro</button>
+                        <span id="spanTipoConsegna"></span>
+                    </div>
+
+                    <form id="opzioni-consegna" method="post">
+                        <div class="input">
+                            <ul class="clearfix">
+                                <li>
+                                    <label for="nome">Nome</label>
+                                    <input type="text" id="nome" placeholder="Nome" autocomplete="off">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <label for="cognome">Cognome</label>
+                                    <input type="text" id="cognome" placeholder="Cognome" autocomplete="off">
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <label for="indirizzo">Indirizzo e numero civico</label>
+                            <input type="text" id="indirizzo" placeholder="Indirizzo e numero civico"
+                                autocomplete="off">
+                            <span></span>
+                        </div>
+
+                        <div id="cap-citta-paese">
+                            <ul class="clearfix">
+                                <li>
+                                    <label for="cap">CAP</label>
+                                    <input type="text" id="cap" placeholder="CAP" autocomplete="off">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <label for="citta">Città</label>
+                                    <input type="text" id="citta" placeholder="Città" autocomplete="off">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <label for="paese">Paese</label>
+                                    <input type="text" id="paese" placeholder="Paese" autocomplete="off">
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="input">
+                            <ul class="clearfix">
+                                <li>
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" placeholder="E-mail" autocomplete="off">
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <label for="telefono">Numero di telefono</label>
+                                    <input type="tel" id="telefono" placeholder="Numero di telefono" autocomplete="off">
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="continua">Salva e continua</button>
+                    </form>
+                </div>
+
+                <h2>Pagamento</h2>
+
+                <div id="pagamento">
+                    <p>Paese/regione di fatturazione</p>
+                    <p>Italia <a href="#">Modifica</a></p>
+
+                    <input type="checkbox" id="promozione">
+                    <label for="promozione">Possiedi una gift card, un voucher prodotto o un codice
+                        promozionale?</label>
+
+                    <p>Seleziona metodo di pagamento</p>
+                    <form>
+                        <input type="radio" id="carta-credito" name="metodopagamento">
+                        <label for="carta-credito">Carta di credito o debito</label> <br>
+                        <input type="radio" id="metodo-paypal" name="metodopagamento">
+                        <label for="metodo-paypal">PayPal</label> <br>
+                        <input type="radio" id="google" name="metodopagamento">
+                        <label for="google">Google Pay</label> <br>
+                        <span id="SpanMetodoDiPagamento"></span>
+
+                        <div id="aggiungi-carta">
+                            <p>Aggiungi carta</p>
+
+                            <ul class="clearfix">
+                                <li>
+                                    <input type="text" id="numero-carta" placeholder="Numero carta">
+                                    <span></span>
+                                </li>
+
+                                <li>
+                                    <input type="text" id="mese-anno" placeholder="MM/AA">
+                                    <span></span>
+                                </li>
+
+                                <li>
+                                    <input type="text" id="cvv" placeholder="CVV">
+                                    <span></span>
+                                </li>
+
+                            </ul>
+                            <a href="#">Where is my CVV?</a>
+                        </div>
+
+                        <button class="continua">Pagamento</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="box-2">
+                <div class="clearfix bordo">
+                    <div id="div1">
+                        <h2>Nel carrello</h2>
+                        <p>Subtotale</p>
+                        <p>Costi di spedizione stimati</p>
+                        <p>Totale</p>
+                    </div>
+
+                    <div id="div2 ">
+                        <p><a href="#">Modifica</a></p>
+                        <p>119,99&#8364;</p>
+                        <p>0,0&#8364;</p>
+                        <p>119,99&#8364;</p>
+                    </div>
+                </div>
+
+                <p>Arriva entro il giorno 6 febbraio 2024</p>
+
+                <div class="clearfix" id="divart">
+
+                    <img src="../immagini/Scarpa_2/6.jpg" alt="scarpa">
+
+                    <div>
+                        <p>Nike Dunk Low Retro</p>
+                        <p>Scarpa - Donna</p>
+                        <p>Bianco&#47;Grigio</p>
+                        <p>Taglia&#47;Misura 39</p>
+                        <p>Quantità 1</p>
+                        <p>119,99&#8364;</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="thankyou-page">
+            <section>
+                <h2>THANK YOU</h2>
+                <img src="" alt="">
+                <p>Grazie per aver aquistato sul nostro sito!</p>
+                <div class="clearfix">
+                    <div id="social" class="clearfix">
+                        <p>Like & Share</p>
+                        <ul>
+                            <li><img src="../immagini/icone/icons8-facebook-48.png" alt=""></li>
+                            <li><img src="../immagini/icone/icons8-instagram-48.png" alt=""></li>
+                            <li><img src="../immagini/icone/icons8-twitter-48.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div id="home">
+                        <p>Visita il nostro sito</p>
+                        <a href="homepage.html">Let's Go</a>
+                    </div>
+                </div>
+            </section>
+            </div>
+    </main>
+</body>
+
+</html>

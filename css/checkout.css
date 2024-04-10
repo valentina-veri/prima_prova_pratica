@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.larghezza {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*HEADER INIZIO*/
+
+header {
+    margin-top: 2%;
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    align-items: center;
+}
+
+#logo {
+    width: 32%;
+}
+
+#logo img {
+    width: 20%;
+}
+
+#button {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#carrello {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: white;
+    cursor: pointer;
+}
+
+#carrello:hover {
+    background-color: #E5E5E5;
+}
+
+/*MAIN*/
+
+h1 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#box-1 {
+    float: left;
+    width: 68%;
+}
+
+#box-2 {
+    float: right;
+    width: 28%;
+}
+
+.bordo {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+#div1 {
+    float: left;
+    width: 70%;
+}
+
+#div2 {
+    float: right;
+    width: 30%;
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#box-2 a {
+    color: black;
+    display: block;
+    margin-bottom: 25px;
+}
+
+#divart img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+#divart div {
+    float: left;
+    font-size: 14px;
+    line-height: 7px;
+}
+
+/*modulo consegna*/
+
+#consegna,
+#aggiungi-carta {
+    margin-top: 2em;
+}
+
+#consegna button:last-of-type {
+    margin-right: 0;
+}
+
+:is(#opzioni-consegna, #aggiungi-carta) ul {
+    padding-left: 0;
+}
+
+:is(#opzioni-consegna, #aggiungi-carta) ul li {
+    list-style: none;
+}
+
+#opzioni-consegna label {
+    display: block;
+}
+
+#TipoDiConsegna button{
+    width: 49%;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1.4%;
+}
+
+#TipoDiConsegna button:last-child{
+    margin-right: 0;
+}
+
+.input ul li:first-child{
+    float: left;
+    width: 49%;
+}
+
+.input ul li:last-child {
+    float: right;
+    width: 49%;
+}
+
+:is(#cap-citta-paese, #aggiungi-carta) ul li {
+    float: left;
+    width: calc(100% / 3 - 0.5em);
+    margin-right: 0.7em;
+}
+
+:is(#cap-citta-paese, #aggiungi-carta) ul li:last-of-type {
+    margin-right: 0;
+}
+
+:is(#opzioni-consegna, #aggiungi-carta) input{
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#opzioni-consegna {
+    margin-top: 1em;
+}
+
+:is(#opzioni-consegna, #pagamento) button.continua {
+    width: 20%;
+    background-color: #E5E5E5;
+    margin-left: 42em;
+    border-radius: 25px;
+    border-color: transparent;
+    color: #504f4f;
+    font-size: medium;
+    padding: 1em 0;
+    font-weight: bolder;
+    margin-bottom: 2em;
+   cursor: pointer;
+}
+
+/*fine modulo consegna*/
+
+/*modulo pagamento*/
+
+#pagamento{
+    display: none;
+}
+
+#pagamento a {
+    color: black;
+}
+
+#pagamento input {
+    margin-top: 1em;
+}
+
+#promozione{
+    margin-bottom: 2em;
+}
+
+#google{
+    margin-bottom: 2em;
+}
+
+#aggiungi-carta {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#aggiungi-carta a {
+    color: black;
+    margin-left: 83%;
+}
+
+.errore{
+    border-color: red;
+}
+
+span{
+    color: red;
+}
+
+/*fine modulo pagamento*/
+
+/*thankyou page*/
+#thankyou-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #919090;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    display: none;
+}
+
+#thankyou-page section {
+    background-color: white;
+    width: 50%;
+    max-height: 500px;
+    text-align: center;
+    padding: 2em;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+#social {
+    float: left;
+    width: 49%;
+}
+
+#home {
+    float: right;
+    width: 49%;
+}
+
+#social ul li {
+    list-style: none;
+    float: left;
+    margin-right: 1em;
+}
+
+#social ul li:first-of-type {
+    margin-left: 20px;
+}
+
+#home p {
+    margin-bottom: 1.4em;
+}
+
+/*fine thankyou page*/

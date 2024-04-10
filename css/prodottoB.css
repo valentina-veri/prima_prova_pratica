@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .larghezza {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /*HEADER INIZIO*/
+  nav,
+  #section1 {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    align-items: center;
+  }
+  
+  /* inizio sezione 1 con il i loghi air Jordan-converse e il mini menù */
+  #section1 {
+    height: 35px;
+    background-color: #F5F5F5;
+  }
+  
+  #loghi2 {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5%;
+  }
+  
+  #minimenu {
+    width: 30%;
+    padding-right: 3%;
+  }
+  
+  #section1 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #section1 ul li {
+    float: left;
+    width: 15%;
+    border-right: black solid 2px;
+  }
+  
+  #section1 ul li:first-child {
+    width: 35%;
+  }
+  
+  #section1 ul li:nth-child(3) {
+    width: 27%;
+  }
+  
+  #section1 ul li:last-child {
+    border-right: transparent;
+  }
+  
+  #section1 ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  #section1 ul li a:hover {
+    color: rgb(129, 129, 129);
+  }
+  
+  .loghi {
+    width: 50px;
+    padding-right: 20px;
+  }
+  
+  .loghi img {
+    width: 90%;
+  }
+  
+  /*sezione nav con il logo della nike, il menù principale, la barra di ricerca e le icone dei preferiti e del carrello*/
+  #logo {
+    width: 32%;
+  }
+  
+  #logo img {
+    width: 20%;
+  }
+  
+  #menu {
+    width: 45%;
+  }
+  
+  #search {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  #button {
+    width: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    float: left;
+    width: 13%;
+  }
+  
+  nav ul li:first-child {
+    float: left;
+    width: 30%;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.2 rem;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: black 2px solid;
+    padding-bottom: 3px;
+  }
+  
+  #cerca,
+  #preferiti,
+  #carrello {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: white;
+  }
+  
+  #preferiti:hover,
+  #carrello:hover,
+  #ricerca:hover {
+    background-color: #E5E5E5;
+  }
+  
+  #ricerca {
+    border-radius: 20px;
+    border: #F5F5F5;
+    background-color:#E5E5E5;
+    width: 80%;
+    height: 42px;
+    padding-left: 30%;
+    font-weight: 700;
+    font-size: 1em;
+  }
+  
+  #cerca {
+    position: absolute;
+    background-color: #E5E5E5;
+  }
+  
+  /*sezione 2 con promo*/
+  #section2 {
+    background-color: #F5F5F5;
+    margin-bottom: 2%;
+  }
+  
+  #section2 p {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  #p2 {
+    font-size: 0.8em;
+  }
+  
+  /*HEADER FINE*/
+  
+  /*MAIN*/
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #taglie {
+    width: 30%;
+    float: left;
+  
+  }
+  
+  #taglie ul {
+    padding-left: 0;
+    width: 80%;
+  }
+  
+  #taglie ul li {
+    width: 32%;
+    height: 40px;
+    margin: 2px;
+    border: solid 1px #c4c4c4;
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    float: left;
+  }
+  
+  #taglie ul li:hover {
+    border: solid 1px black;
+  }
+  
+  #taglie button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    width: 308px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  span {
+    font-size: 1.5em;
+  }
+  
+  #p1 {
+    margin-top: 0;
+  }
+  
+  #prezzo {
+    margin-bottom: 3em;
+  }
+  
+  #errorescelta {
+    color: red;
+    font-size: 1em;
+    display: none;
+  }
+  
+  .errore {
+    border: 2px solid red;
+  }
+  
+  #immagini {
+    float: left;
+    margin-right: 2%;
+    margin-left: 15%;
+    margin-top: 7px;
+  }
+  
+  #immagini img {
+    margin-bottom: 5px;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+  }
+  
+  #scarpa {
+    float: left;
+    margin-right: 5%;
+    margin-top: 0.5%;
+  }
+
+  #scarpa img{
+    width: 500px;
+    height: 535px;
+  }
+  
+  #popup {
+    background-color: rgba(0, 0, 0, 0.74);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+  
+  .nascondipopup {
+    display: none;
+  }
+  
+  #popup section {
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    margin-left: 70%;
+    position: relative;
+  }
+  
+  #popup img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 17px;
+  }
+  
+  #popup section div div {
+    width: 250px;
+    float: left;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  
+  #popup section div{
+    margin-top: 5%; 
+  }
+  
+  .a {
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 45%;
+    margin-left: 12px;
+  }
+  
+  #close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+  }
+  
+  #close:hover {
+    color: red;
+  }

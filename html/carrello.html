@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrello</title>
+    <link rel="stylesheet" href="../css/carrello.css">
+    <script src="../js/carrello.js"></script>
+</head>
+
+<body>
+    <header>
+        <section id="section1">
+            <div id="loghi2">
+                <div class="loghi">
+                    <a href=""><img src="../immagini/icone/icons8-air-jordan-50.png" alt="airjordan"></a>
+                </div>
+                <div class="loghi">
+                    <a href=""><img src="../immagini/icone/Converse_.png" alt="Converse"></a>
+                </div>
+            </div>
+
+            <div id="minimenu">
+                <ul>
+                    <li><a href="#">Trova un negozio</a></li>
+                    <li><a href="#">Aiuto</a></li>
+                    <li><a href="#">Unisciti a noi</a></li>
+                    <li><a href="#">Accedi</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <nav class="larghezza">
+            <div id="logo">
+                <a href="homepage.html"><img src="../immagini/logo.png" alt="logo"></a>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Novità e in evidenza</a></li>
+                    <li><a href="#">Uomo</a></li>
+                    <li><a href="#">Donna</a></li>
+                    <li><a href="#">Bambini</a></li>
+                    <li><a href="#">Outlet</a></li>
+                </ul>
+            </div>
+
+
+            <div id="search">
+                <input type="search" id="ricerca" placeholder="Cerca">
+                <button id="cerca">
+                    <img src="../immagini/icone/icons8-ricerca-30.png" alt="cerca" title="cerca">
+                </button>
+            </div>
+
+            <div id="button">
+                <div>
+                    <button id="preferiti">
+                        <img src="../immagini/icone/icons8-mi-piace-32.png" alt="preferiti" title="preferiti">
+                    </button>
+                </div>
+                <div>
+                    <button id="carrello">
+                        <img src="../immagini/icone/icons8-borsa-50.png" alt="carrello" title="carrello">
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="clearfix larghezza">
+        <section id="prodottiAggiunti" class="bordo">
+
+            <div id="titolo">
+                <h2 id="style">Spedizione gratuita per i Member</h2>
+                <p>Diventa Member Nike e approfitta della spedizione rapida e gratuita. <a href="#">Unisciti a noi</a> o
+                    <a href="#">Accedi</a>
+                </p>
+            </div>
+
+            <h1>Carrello</h1>
+
+            <div class="divarticolo">
+                <div class="clearfix">
+
+                    <img src="../immagini/Scarpa/4.jpg" alt="scarpa">
+
+                    <div class="articolo">
+                        <p>Nike Dunk Low Retro</p>
+                        <p>Scarpa - Donna</p>
+                        <p>Bianco&#47;Nero</p>
+                        <p>Taglia&#47;Misura 39 Quantità 1</p>
+                        <img src="../immagini/icone/icons8-regalo-50.png" alt="regalo">
+                        <img src="../immagini/icone/icons8-mi-piace-32.png" alt="cuore">
+                        <img class="cestino" src="../immagini/icone/icons8-cestino-50.png" alt="cestino">
+                    </div>
+
+                    <div>
+                        <p class="costo" ></p>
+                    </div>
+                </div>
+
+                <div class="ritiro">
+                    <p>Ritiro gratuito</p>
+                    <a href="#">Trova un negozio</a>
+                </div>
+            </div>
+
+            <div class="divarticolo">
+
+                <div class="clearfix">
+
+                    <img src="../immagini/Scarpa_2/6.jpg" alt="scarpa">
+
+                    <div class="articolo">
+                        <p>Nike Dunk Low Retro</p>
+                        <p>Scarpa - Donna</p>
+                        <p>Bianco&#47;Grigio</p>
+                        <p>Taglia&#47;Misura 39 Quantità 1</p>
+                        <img src="../immagini/icone/icons8-regalo-50.png" alt="regalo">
+                        <img src="../immagini/icone/icons8-mi-piace-32.png" alt="cuore">
+                        <img class="cestino" src="../immagini/icone/icons8-cestino-50.png" alt="cestino">
+                    </div>
+
+                    <div>
+                        <p class="costo"></p>
+                    </div>
+                </div>
+
+                <div class="ritiro">
+                    <p>Ritiro gratuito</p>
+                    <a href="#">Trova un negozio</a>
+                </div>
+
+            </div>
+
+            <div>
+                <h2>Preferiti</h2>
+                <p>Vuoi visualizzare i preferiti?</p>
+                <p><a href="#">Unisciti a noi</a> o
+                    <a href="#">Accedi</a>
+                </p>
+            </div>
+
+        </section>
+
+        <section id="riepilogo">
+
+            <h2>Riepilogo</h2>
+
+            <div class="clearfix bordo">
+                <div class="divriepilogo">
+                    <p>Hai un codice promozionale?</p>
+                    <p>Subtotale</p>
+                    <p>Costi di spedizione e gestione previsti</p>
+                </div>
+
+                <div class="costototale">
+                    <p>&#8744;</p>
+                    <p class="prezzofinale" id="subtotale"></p>
+                    <p id="pspedizione"></p>
+                </div>
+            </div>
+
+            <div class="clearfix bordo">
+                <p class="divriepilogo">Totale</p>
+                <p class="prezzofinale costototale" id="prezzoTotale"></p>
+            </div>
+
+            <a href="checkout.html">Vai al pagamento</a>
+            <button id="paypal"><span>Pay</span>Pal</button>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
